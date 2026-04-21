@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PiXELL-River Financial System documentation &#8212; PiXELL-River Financial System 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="pixell-river-financial-system-documentation">
+<h1>PiXELL-River Financial System documentation<a class="headerlink" href="#pixell-river-financial-system-documentation" title="Link to this heading">¶</a></h1>
+<p>Add your content using <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> syntax. See the
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html">reStructuredText</a>
+documentation for details.</p>
+<div class="toctree-wrapper compound">
+</div>
+<p id="module-bank_account.bank_account">Description: Module 1 Assignment 1: BankAccount Class
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="bank_account.bank_account.BankAccount">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bank_account.bank_account.</span></span><span class="sig-name descname"><span class="pre">BankAccount</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bank_account.bank_account.BankAccount" title="Link to this definition">¶</a></dt>
+<dd><p>BankAccount class: Represents a Client Bank Account.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>__account_number (int): The unique id of the bank account.
+__client_number (int): The unique id of the client.
+__balance (float): The balance of the bank account.</p>
+</dd>
+<dt>Constants:</dt><dd><p>LOW_BALANCE_LEVEL (float): The threshold below which a low balance warning is triggered.
+LARGE_TRANSACTION_THRESHOLD (float): The threshold above which a large transaction warning is triggered.</p>
+</dd>
+<dt>Methods:</dt><dd><p>__init__(): Initializes the BankAccount object.
+account_number(): Accessor for the account_number attribute.
+client_number(): Accessor for the client_number attribute.
+balance(): Accessor for the balance attribute.
+update_balance(amount: float): Updates the balance of the bank account.
+deposit(amount: float): Deposits funds into the bank account.
+withdraw(amount: float): Withdraws funds from the bank account.
+__str__(): Returns a string representation of the class.
+get_service_charges(float): Returns the BASE_SERVICE_CHARGE.</p>
+</dd>
+</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="bank_account.bank_account.BankAccount.account_number">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">account_number</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#bank_account.bank_account.BankAccount.account_number" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor for the __account_number attribute.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>int: The unique id associated with the bank_account instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="bank_account.bank_account.BankAccount.balance">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">balance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#bank_account.bank_account.BankAccount.balance" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor for the __balance attribute.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>float: The balance of the bank acount as a float.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="bank_account.bank_account.BankAccount.client_number">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">client_number</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#bank_account.bank_account.BankAccount.client_number" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor for the __client_number attribute.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>int: The unique id associated with the client instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bank_account.bank_account.BankAccount.deposit">
+<span class="sig-name descname"><span class="pre">deposit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amount</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bank_account.bank_account.BankAccount.deposit" title="Link to this definition">¶</a></dt>
+<dd><p>Deposits funds as a float into a bank account.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>amount (float): The amount to be deposited into the bank account”</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bank_account.bank_account.BankAccount.get_service_charges">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_service_charges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#bank_account.bank_account.BankAccount.get_service_charges" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method used to calculate service charges.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bank_account.bank_account.BankAccount.update_balance">
+<span class="sig-name descname"><span class="pre">update_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amount</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bank_account.bank_account.BankAccount.update_balance" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the balance of the bank account by adding the given amount.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>amount (float): The amount to add to the balance, can be positive or negative.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="bank_account.bank_account.BankAccount.withdraw">
+<span class="sig-name descname"><span class="pre">withdraw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amount</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bank_account.bank_account.BankAccount.withdraw" title="Link to this definition">¶</a></dt>
+<dd><p>Withdraws funds as a float from a bank account.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>amount (float): The amount to be withdrawn from the bank account”</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-bank_account.chequing_account">Description: Module 2 Assignment 2: ChequingAccount Class
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="bank_account.chequing_account.ChequingAccount">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bank_account.chequing_account.</span></span><span class="sig-name descname"><span class="pre">ChequingAccount</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overdraft_limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overdraft_rate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bank_account.chequing_account.ChequingAccount" title="Link to this definition">¶</a></dt>
+<dd><p>ChequingAccount class: Represents a specific type of bank account with 
+an overdraft.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>__overdraft_limit (float): The overdraft limit of the account.
+__overdraft_rate (float): The interest rate applied to the overdraft amount.
+__service_charge_strategy (OverdraftStrategy): The strategy for calculating service charges.</p>
+</dd>
+<dt>Methods:</dt><dd><p>get_service_charges (float): calculates and returns the service charges 
+for the account based on the balance, overdraft_limit and overdraft_rate.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="bank_account.chequing_account.ChequingAccount.get_service_charges">
+<span class="sig-name descname"><span class="pre">get_service_charges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#bank_account.chequing_account.ChequingAccount.get_service_charges" title="Link to this definition">¶</a></dt>
+<dd><p>Method to calculate service charges for the ChequingAccount.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>float: The calculated service charges for the chequing account.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-bank_account.investment_account">Description: Module 2 Assignment 2: InvestmentAccount Class
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="bank_account.investment_account.InvestmentAccount">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bank_account.investment_account.</span></span><span class="sig-name descname"><span class="pre">InvestmentAccount</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">management_fee</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_created</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bank_account.investment_account.InvestmentAccount" title="Link to this definition">¶</a></dt>
+<dd><p>InvestmentAccount class: Represents a specific bank account with a 
+management fee.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>__management_fee (float): The fee for managing the investment account.
+__service_charge_strategy (ManagementFeeStrategy): Strategy for calculating service charges.</p>
+</dd>
+<dt>Methods:</dt><dd><p>get_service_charges: calculates and returns the service charges 
+based on the age of the account.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="bank_account.investment_account.InvestmentAccount.get_service_charges">
+<span class="sig-name descname"><span class="pre">get_service_charges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#bank_account.investment_account.InvestmentAccount.get_service_charges" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the service charges based on the age of the account.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>float: The calculated service charge.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-bank_account.savings_account">Description: Module 2 Assignment 2: SavingsAccount Class
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="bank_account.savings_account.SavingsAccount">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">bank_account.savings_account.</span></span><span class="sig-name descname"><span class="pre">SavingsAccount</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum_balance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_created</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bank_account.savings_account.SavingsAccount" title="Link to this definition">¶</a></dt>
+<dd><p>SavingsAccount class: Represents a specific bank account with a minimum balance.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>__minimum_balance (float): The minimum balance required for the account.
+__service_charge_strategy (MinimumBalanceStrategy): Strategy for calculating service charges.</p>
+</dd>
+<dt>Methods:</dt><dd><p>get_service_charges: Calculates and returns the service charges based on whether
+the minimum balance is met or not.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="bank_account.savings_account.SavingsAccount.get_service_charges">
+<span class="sig-name descname"><span class="pre">get_service_charges</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#bank_account.savings_account.SavingsAccount.get_service_charges" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the service charges based on the account balance.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>float: The calculated service charge.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-client.client">Description: Module 1 Assignment 1: Client Class
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="client.client.Client">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">client.client.</span></span><span class="sig-name descname"><span class="pre">Client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">last_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email_address</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#client.client.Client" title="Link to this definition">¶</a></dt>
+<dd><p>Client class. Represents a client in a bank.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>__client_number(int): The client’s unique id.
+__first_name(str): The first name of the client.
+__last_name(str): The last name of the client.
+__email_address(str): The email address of the client.</p>
+</dd>
+<dt>Methods:</dt><dd><p>__init__(): Initializes class attributes.
+client_number(): Client number accessor.
+first_name(): First name accessor.
+last_name(): Last name accessor.
+email_address(): Email address accessor.
+__str__: Returns a string representaion of the class.</p>
+</dd>
+</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="client.client.Client.client_number">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">client_number</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#client.client.Client.client_number" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor for the client_number attribute.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>int: The unique id associated with the Client instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="client.client.Client.email_address">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">email_address</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#client.client.Client.email_address" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor for the email_address attribute.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>str: The email address associated with the Client instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="client.client.Client.first_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">first_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#client.client.Client.first_name" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor for the first_name attribute.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>str: The first name associates with the Client instance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="client.client.Client.last_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">last_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#client.client.Client.last_name" title="Link to this definition">¶</a></dt>
+<dd><p>Accessor for the last_name attribute.</p>
+<dl class="simple">
+<dt>Returns: </dt><dd><p>str: The last name associated with the Client instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="client.client.Client.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#client.client.Client.update" title="Link to this definition">¶</a></dt>
+<dd><p>Receives notifications and simulates sending an email alert.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>message (str): The notification message.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-patterns.observer.observer">Description: Module 3 Assignment 3: Observer Class
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="patterns.observer.observer.Observer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patterns.observer.observer.</span></span><span class="sig-name descname"><span class="pre">Observer</span></span><a class="headerlink" href="#patterns.observer.observer.Observer" title="Link to this definition">¶</a></dt>
+<dd><p>Observer superclass to define the interface for all concrete observers.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="patterns.observer.observer.Observer.update">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#patterns.observer.observer.Observer.update" title="Link to this definition">¶</a></dt>
+<dd><p>Update method to notify observers of changes.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>message (str): The message containing information about the change.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-patterns.observer.subject">Description: Module 3 Assignment 3: Subject Class
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="patterns.observer.subject.Subject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patterns.observer.subject.</span></span><span class="sig-name descname"><span class="pre">Subject</span></span><a class="headerlink" href="#patterns.observer.subject.Subject" title="Link to this definition">¶</a></dt>
+<dd><p>The Subject class is responsible for maintaining a list of its observers
+and notifying them of state changes or events.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="patterns.observer.subject.Subject.attach">
+<span class="sig-name descname"><span class="pre">attach</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#patterns.observer.observer.Observer" title="patterns.observer.observer.Observer"><span class="pre">Observer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#patterns.observer.subject.Subject.attach" title="Link to this definition">¶</a></dt>
+<dd><p>Adds a new observer to the subject’s list of observers.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>observer (Observer): The observer to add.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="patterns.observer.subject.Subject.detach">
+<span class="sig-name descname"><span class="pre">detach</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">observer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#patterns.observer.observer.Observer" title="patterns.observer.observer.Observer"><span class="pre">Observer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#patterns.observer.subject.Subject.detach" title="Link to this definition">¶</a></dt>
+<dd><p>Removes an observer from the subject’s list of observers.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>observer (Observer): The observer to remove.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="patterns.observer.subject.Subject.notify">
+<span class="sig-name descname"><span class="pre">notify</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#patterns.observer.subject.Subject.notify" title="Link to this definition">¶</a></dt>
+<dd><p>Alerts all registered observers of a state change.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>message (str): The message to send to each observer.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-patterns.strategy.management_fee_strategy">Description: Module 3 Assignment 3: ManagementFeeStrategy
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="patterns.strategy.management_fee_strategy.ManagementFeeStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patterns.strategy.management_fee_strategy.</span></span><span class="sig-name descname"><span class="pre">ManagementFeeStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">date_created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">management_fee</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.management_fee_strategy.ManagementFeeStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Strategy for calculating service charges on accounts with managements fees.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>__date_created (date): The date the account was created.
+__management_fee (float): The fee for managing the account.</p>
+</dd>
+<dt>Constant:</dt><dd><p>TEN_YEARS_AGO (date): The date ten years ago from today.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="patterns.strategy.management_fee_strategy.ManagementFeeStrategy.calculate_service_charges">
+<span class="sig-name descname"><span class="pre">calculate_service_charges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#bank_account.bank_account.BankAccount" title="bank_account.bank_account.BankAccount"><span class="pre">BankAccount</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#patterns.strategy.management_fee_strategy.ManagementFeeStrategy.calculate_service_charges" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the service charges based on the age of the account.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>account (BankAccount): The bank account to calculate the charges for.</p>
+</dd>
+<dt>Returns:</dt><dd><p>float: The calculated service charge.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-patterns.strategy.minimum_balance_strategy">Description: Module 3 Assignment 3: MinimumBalanceStrategy
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="patterns.strategy.minimum_balance_strategy.MinimumBalanceStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patterns.strategy.minimum_balance_strategy.</span></span><span class="sig-name descname"><span class="pre">MinimumBalanceStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum_balance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.minimum_balance_strategy.MinimumBalanceStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Strategy for calculating service charges based on a minimum balance requirement.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>__minimum_balance (float): The required minimum balance for the account.</p>
+</dd>
+<dt>Constant:</dt><dd><p>SERVICE_CHARGE_PREMIUM (float): The premium multiplier applied if balance is below minimum.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="patterns.strategy.minimum_balance_strategy.MinimumBalanceStrategy.calculate_service_charges">
+<span class="sig-name descname"><span class="pre">calculate_service_charges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#bank_account.bank_account.BankAccount" title="bank_account.bank_account.BankAccount"><span class="pre">BankAccount</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#patterns.strategy.minimum_balance_strategy.MinimumBalanceStrategy.calculate_service_charges" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates the service charges based on the account balance.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>account (BankAccount): The bank account to calculate the charges for.</p>
+</dd>
+<dt>Returns:</dt><dd><p>float: The calculated service charge.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-patterns.strategy.overdraft_strategy">Description: Module 3 Assignment 3: OverdraftStrategy
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="patterns.strategy.overdraft_strategy.OverdraftStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patterns.strategy.overdraft_strategy.</span></span><span class="sig-name descname"><span class="pre">OverdraftStrategy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">overdraft_limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">overdraft_rate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#patterns.strategy.overdraft_strategy.OverdraftStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Strategy for calculating service charges on accounts with an overdraft.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>__overdraft_limit (float): The maximum overdraft allowed as a positive value.
+__overdraft_rate (float): The interest rate applied to the overdraft amount.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="patterns.strategy.overdraft_strategy.OverdraftStrategy.calculate_service_charges">
+<span class="sig-name descname"><span class="pre">calculate_service_charges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#bank_account.bank_account.BankAccount" title="bank_account.bank_account.BankAccount"><span class="pre">BankAccount</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#patterns.strategy.overdraft_strategy.OverdraftStrategy.calculate_service_charges" title="Link to this definition">¶</a></dt>
+<dd><p>Calculates service charges based on the overdraft rules.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>account (BankAccount): The bank account to calculate the charges.</p>
+</dd>
+<dt>Returns:</dt><dd><p>float: The calculated service charge.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p id="module-patterns.strategy.service_charge_strategy">Description: Module 3 Assignment 3: ServiceChargeStrategy
+Author: Chance Parker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="patterns.strategy.service_charge_strategy.ServiceChargeStrategy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">patterns.strategy.service_charge_strategy.</span></span><span class="sig-name descname"><span class="pre">ServiceChargeStrategy</span></span><a class="headerlink" href="#patterns.strategy.service_charge_strategy.ServiceChargeStrategy" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract superclass for all service charge strategies.</p>
+<dl class="simple">
+<dt>Constant:</dt><dd><p>BASE_SERVICE_CHARGE (float): Base service for all accounts.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="patterns.strategy.service_charge_strategy.ServiceChargeStrategy.calculate_service_charges">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calculate_service_charges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#bank_account.bank_account.BankAccount" title="bank_account.bank_account.BankAccount"><span class="pre">BankAccount</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#patterns.strategy.service_charge_strategy.ServiceChargeStrategy.calculate_service_charges" title="Link to this definition">¶</a></dt>
+<dd><p>Abstract method to calculate service charges for a bank account.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>account (BankAccount): The bank account used to calculate service charges.</p>
+</dd>
+<dt>Returns:</dt><dd><p>float: The calculated service charge.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-user_interface.account_details_window">
+<dt class="sig sig-object py" id="user_interface.account_details_window.AccountDetailsWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_interface.account_details_window.</span></span><span class="sig-name descname"><span class="pre">AccountDetailsWindow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">account</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#bank_account.bank_account.BankAccount" title="bank_account.bank_account.BankAccount"><span class="pre">BankAccount</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_interface.account_details_window.AccountDetailsWindow" title="Link to this definition">¶</a></dt>
+<dd><p>A class used to display account details and perform bank account transactions.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>account (BankAccount): A copy of the provided account object for transactions.
+balance_updated (Signal): A signal emitted when the account balance is updated.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class" id="module-user_interface.client_lookup_window">
+<dt class="sig sig-object py" id="user_interface.client_lookup_window.ClientLookupWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">user_interface.client_lookup_window.</span></span><span class="sig-name descname"><span class="pre">ClientLookupWindow</span></span><a class="headerlink" href="#user_interface.client_lookup_window.ClientLookupWindow" title="Link to this definition">¶</a></dt>
+<dd><p>A window for looking up and managing client accounts.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>client_listing (dict): A dictionary of client data loaded from a file.
+accounts (dict): A dictionary of bank account data loaded from a file.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="user_interface.client_lookup_window.ClientLookupWindow.on_filter_clicked">
+<span class="sig-name descname"><span class="pre">on_filter_clicked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user_interface.client_lookup_window.ClientLookupWindow.on_filter_clicked" title="Link to this definition">¶</a></dt>
+<dd><p>Handles the filtering of records in the account_table based on user-defined criteria.
+Toggles the display of the filtering widgets to indicate whether the table is filtered or complete.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_interface.client_lookup_window.ClientLookupWindow.on_lookup_client">
+<span class="sig-name descname"><span class="pre">on_lookup_client</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user_interface.client_lookup_window.ClientLookupWindow.on_lookup_client" title="Link to this definition">¶</a></dt>
+<dd><p>Handles the lookup of a client based on the entered client number.
+Displays client details and their associated accounts in the account_table.</p>
+<dl class="simple">
+<dt>Raises:</dt><dd><p>ValueError: If the client number is invalid or not found.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_interface.client_lookup_window.ClientLookupWindow.on_select_account">
+<span class="sig-name descname"><span class="pre">on_select_account</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_interface.client_lookup_window.ClientLookupWindow.on_select_account" title="Link to this definition">¶</a></dt>
+<dd><p>Handles the event when a cell in the account_table is clicked.
+Opens an AccountDetailsWindow to display or edit the account details.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>row (int): The row of the clicked cell in the account table.
+column (int): The column of the clicked cell in the account table.</p>
+</dd>
+<dt>Raises:</dt><dd><p>Exception: If an unexpected error occurs while opening the account details window.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_interface.client_lookup_window.ClientLookupWindow.toggle_filter">
+<span class="sig-name descname"><span class="pre">toggle_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter_on</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_interface.client_lookup_window.ClientLookupWindow.toggle_filter" title="Link to this definition">¶</a></dt>
+<dd><p>Toggles the display and state of the filter widgets to indicate whether filtering is active.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>filter_on (bool): Whether filtering is currently active.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="user_interface.client_lookup_window.ClientLookupWindow.update_data">
+<span class="sig-name descname"><span class="pre">update_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">updated_account</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#bank_account.bank_account.BankAccount" title="bank_account.bank_account.BankAccount"><span class="pre">BankAccount</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user_interface.client_lookup_window.ClientLookupWindow.update_data" title="Link to this definition">¶</a></dt>
+<dd><p>Updates the account table and the accounts.csv file with the updated balance.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>updated_account (BankAccount): The updated BankAccount object.</p>
+</dd>
+<dt>Raises:</dt><dd><p>Exception: If updating the account data or file fails.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function" id="module-user_interface.manage_data">
+<dt class="sig sig-object py" id="user_interface.manage_data.update_data">
+<span class="sig-prename descclassname"><span class="pre">user_interface.manage_data.</span></span><span class="sig-name descname"><span class="pre">update_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">updated_account</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#bank_account.bank_account.BankAccount" title="bank_account.bank_account.BankAccount"><span class="pre">BankAccount</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#user_interface.manage_data.update_data" title="Link to this definition">¶</a></dt>
+<dd><p>A function to update the accounts.csv file with balance 
+data provided in the BankAccount argument.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>updated_account (BankAccount): A bank account containing an updated balance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class" id="module-details_window">
+<dt class="sig sig-object py" id="details_window.DetailsWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">details_window.</span></span><span class="sig-name descname"><span class="pre">DetailsWindow</span></span><a class="headerlink" href="#details_window.DetailsWindow" title="Link to this definition">¶</a></dt>
+<dd><p>A Python class which allows users perform bank account 
+transactions. This class is meant to work in conjunction 
+with the BankAccount class such that deposit and withdraw 
+functionality may be used.</p>
+</dd></dl>
+
+<dl class="py class" id="module-lookup_window">
+<dt class="sig sig-object py" id="lookup_window.LookupWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">lookup_window.</span></span><span class="sig-name descname"><span class="pre">LookupWindow</span></span><a class="headerlink" href="#lookup_window.LookupWindow" title="Link to this definition">¶</a></dt>
+<dd><p>A Python class which allows users to retrieve Client 
+information.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lookup_window.LookupWindow.reset_display">
+<span class="sig-name descname"><span class="pre">reset_display</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#lookup_window.LookupWindow.reset_display" title="Link to this definition">¶</a></dt>
+<dd><p>Resets the display.</p>
+<p>This function Clears contents of display fields client_number_edit, client_info_label 
+and account_table, and resets focus to the client_number_edit.</p>
+<blockquote>
+<div><p>reset_display()</p>
+</div></blockquote>
+<p>Note that the function does not return anything.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">PiXELL-River Financial System</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Chance Parker.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
