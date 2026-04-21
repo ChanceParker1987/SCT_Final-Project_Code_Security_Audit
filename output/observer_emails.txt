@@ -1,0 +1,100 @@
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:18:52.347749
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:18:52.347749
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:19:41.742686
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:19:41.742686
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:20:12.449245
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:20:12.450246
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:30:23.582658
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:30:23.582658
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:32:27.243893
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:32:27.244893
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:32:31.090691
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:32:31.091691
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:35:08.871307
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:35:08.872307
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: .2f
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: .2f
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: .2
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: .2
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:36:51.221669
+Message: Notification for 392475: Chance Parker: Large transaction $10500.00: on account 111111.
+---
+---
+To: cparker2@academic.rrc.ca
+Subject: ALERT: Unusual Activity: 2024-10-28 00:36:51.221669
+Message: Notification for 392475: Chance Parker: Large transaction $15000.00: on account 222222.
+---
